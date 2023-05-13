@@ -11235,6 +11235,7 @@ MonoBehaviour:
   Camera: {fileID: 1876788563}
   PlayerSpeed: 0.01
   RotationSpeed: 1
+  PlayerAnimator: {fileID: 204021314}
 --- !u!136 &204021308
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11279,6 +11280,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!95 &204021314
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204021300}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 11482cec330dc4862898665dcade27a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &204183781 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 105308, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
@@ -24466,6 +24487,10 @@ PrefabInstance:
     - target: {fileID: 430644, guid: 16e5aca9861e75b43aad74b12103c777, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11130506, guid: 16e5aca9861e75b43aad74b12103c777, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11130506, guid: 16e5aca9861e75b43aad74b12103c777, type: 3}
       propertyPath: m_Animation

@@ -11,6 +11,9 @@ public class Playercontroller : MonoBehaviour
     Vector3 speed = Vector3.zero;
     Vector3 rot = Vector3.zero;
 
+    public Animator PlayerAnimator;
+    // bool isRun;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,7 @@ public class Playercontroller : MonoBehaviour
     {
         speed = Vector3.zero;
         rot = Vector3.zero;
+        // isRun = false;
 
         if(Input.GetKey(KeyCode.W))
         {
@@ -56,12 +60,14 @@ public class Playercontroller : MonoBehaviour
         }
         // transform.eulerAngles = Camera.transform.eulerAngles + rot;
         transform.Translate(speed); 
+        // PlayerAnimator.SetBool("run",isRun);
     }
 
     void MoveSet()
     {
         speed.z = PlayerSpeed;
         transform.eulerAngles = Camera.transform.eulerAngles + rot;
+        // isRun = true;
     }
 
     void Rotation()
