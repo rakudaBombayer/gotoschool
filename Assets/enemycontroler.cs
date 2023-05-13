@@ -26,7 +26,8 @@ public class enemycontroler : MonoBehaviour
         if (Target)
         {
             transform.LookAt(Target.transform);
-            this.transform.Translate(speed);
+            rot = transform.eulerAngles;
+            // this.transform.Translate(speed);
             // 上にこれがあれば追いかけやめ スイッチ アクション動画#10 12:00ごろ
         }
         else
@@ -34,7 +35,7 @@ public class enemycontroler : MonoBehaviour
             Timer += Time.deltaTime;
             if (ChangeTime <= Timer)
             {
-                float rand = Random.Range(0, 360);
+                float rand = Random.Range(0, 90);
                 rot.y = rand;
                 Timer = 0;
             }
@@ -45,7 +46,7 @@ public class enemycontroler : MonoBehaviour
         rot.z = 0;
         transform.eulerAngles = rot;
 
-        // this.transform.Translate(speed);
+        this.transform.Translate(speed);
         // 上にこれがあれば常に走る スイッチ
     }
 
