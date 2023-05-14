@@ -35,7 +35,7 @@ public class enemycontroler : MonoBehaviour
             Timer += Time.deltaTime;
             if (ChangeTime <= Timer)
             {
-                float rand = Random.Range(0, 90);
+                float rand = Random.Range(0, 180);
                 rot.y = rand;
                 Timer = 0;
             }
