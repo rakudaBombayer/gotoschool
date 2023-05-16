@@ -6,6 +6,7 @@ TagManager:
   tags:
   - AICars
   - enemy
+  - Enemy
   layers:
   - Default
   - TransparentFX

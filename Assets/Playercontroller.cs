@@ -84,4 +84,13 @@ public class Playercontroller : MonoBehaviour
 
         Camera.transform.eulerAngles += speed;
     }
+
+    // void Attack()
+    // {
+    //     if(Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //         PlayerAnimator.SetBool("attack",true):
+    //     }アタックコマンド3dアクション8:24
+    // }
+    
 }
