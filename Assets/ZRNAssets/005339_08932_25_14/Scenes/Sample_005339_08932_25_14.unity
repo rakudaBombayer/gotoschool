@@ -9437,8 +9437,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: -1, z: 0.5}
+  m_Radius: 0.2
+  m_Center: {x: 0, y: -0.4, z: 0.5}
 --- !u!1 &131714232 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 103440, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
@@ -67203,8 +67203,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3
-  m_Center: {x: 0, y: 0, z: 3}
+  m_Radius: 4
+  m_Center: {x: 0, y: 0, z: 4.5}
 --- !u!114 &1735664360
 MonoBehaviour:
   m_ObjectHideFlags: 0
