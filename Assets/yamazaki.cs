@@ -30,22 +30,22 @@ public class yamazaki : MonoBehaviour
             this.transform.Translate(speed);
             // 上にこれがあれば追いかけやめ スイッチ アクション動画#10 12:00ごろ
         }
-        else
-        {
-            Timer += Time.deltaTime;
-            if (ChangeTime <= Timer)
-            {
-                float rand = Random.Range(0, 120);
-                rot.y = rand;
-                Timer = 0;
-            }
-        }
+        // else
+        // {
+        //     Timer += Time.deltaTime;
+        //     if (ChangeTime <= Timer)
+        //     {
+        //         float rand = Random.Range(0, 120);
+        //         rot.y = rand;
+        //         Timer = 0;
+        //     }
+        // }
 
         
+        // var rot = transform.eulerAngles;
         rot.x = 0;
         rot.z = 0;
         transform.eulerAngles = rot;
-
         // this.transform.Translate(speed);
         // 上にこれがあれば常に走る スイッチ
     }
